@@ -10,7 +10,8 @@ const serviceSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-  // Add more fields as necessary, e.g., price, category, etc.
+  // will add more fields (price, category, etc)
+
 }, { timestamps: true });
 
 module.exports = mongoose.model('Service', serviceSchema);

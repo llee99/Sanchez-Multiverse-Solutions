@@ -5,7 +5,7 @@ function About() {
         <div>
             <h1>About Us</h1>
             <p>Information about Sanchez Multiverse Solutions.</p>
-            {/* Add team members, company history, etc. */}
+            {/* adding team, company history */}
         </div>
     );
 }

@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchServices } from '../redux/slices/serviceSlice';
+import { fetchServices } from '../redux/actions/serviceActions';
 
 function Services() {
-    const dispatch = useDispatch();
     const servicesState = useSelector(state => state.services);
     const { services, loading, error } = servicesState;
-    
+    const dispatch = useDispatch();
+
     useEffect(() => {
+        
         dispatch(fetchServices());
     }, [dispatch]);
-    
 
     console.log('Services:', services); // Check what services contain
 
@@ -31,7 +31,7 @@ function Services() {
             <ul>
                 {services.map(service => (
                 <li key={service._id}>
-                <Link to={`/services/${service._id}`}>{service.title}</Link>
+                    <Link to={`/services/${service._id}`}>{service.title}</Link>
                 </li>
                 ))}
             </ul>

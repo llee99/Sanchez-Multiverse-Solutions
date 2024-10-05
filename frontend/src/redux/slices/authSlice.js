@@ -1,4 +1,3 @@
-// frontend/src/redux/slices/authSlice.js
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 

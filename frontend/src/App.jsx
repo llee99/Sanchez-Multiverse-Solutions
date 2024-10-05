@@ -43,7 +43,7 @@ function App() {
                 </PrivateRoute >
               }
               />
-              {/* Add more routes as needed */}
+              {/* adding more routes */}
           </Routes>
         </main>
         <Footer />

@@ -11,8 +11,8 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            // Implement contact form submission logic
-            // For example, send data to backend or use a service like EmailJS
+            // contact form submission logic
+            // (like sending data to backend or use a service like EmailJS)
             setStatus('Message sent successfully!');
             setForm({ name: '', email: '', message: '' });
         } catch (error) {

@@ -29,7 +29,7 @@ function ServiceDetail() {
     <div>
         <h1>{service.title}</h1>
         <p>{service.description}</p>
-        {/* Add more details as necessary */}
+        {/* adding more details */}
     </div>
     );
 }
