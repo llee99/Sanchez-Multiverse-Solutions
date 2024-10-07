@@ -4,7 +4,7 @@ function About() {
     return (
         <div>
             <h1>About Us</h1>
-            <p>Information about Sanchez Multiverse Solutions.</p>
+            <p>Coming Soon</p>
             {/* adding team, company history */}
         </div>
     );
