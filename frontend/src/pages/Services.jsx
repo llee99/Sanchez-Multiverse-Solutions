@@ -12,15 +12,15 @@ function Services() {
         
         dispatch(fetchServices());
     }, [dispatch]);
-
+    
     console.log('Services:', services); // Check what services contain
 
     if (loading) return <p>Loading services...</p>;
     if (error) return <p style={{ color: 'red' }}>{error}</p>;
-  
+    
     if (!Array.isArray(services)) {
       console.error('Services is not an array:', services); // Additional logging
-      return <p>Failed to load services.</p>;
+        return <p>Failed to load services.</p>;
     }
 
     return (

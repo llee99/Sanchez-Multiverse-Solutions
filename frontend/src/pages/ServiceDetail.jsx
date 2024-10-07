@@ -7,7 +7,7 @@ function ServiceDetail() {
     const [service, setService] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
-  
+    
     useEffect(() => {
         const fetchService = async () => {
             try {
